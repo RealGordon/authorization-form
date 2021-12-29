@@ -20,6 +20,7 @@ class Contact extends React.Component {
     const auth = password == this.state.password;
     if(!auth)passwordEl.value="";
 	const attempt=this.state.attempt;
+	  e.preventDefault();
     this.setState({
       authorized: auth,
       message:(!auth?"wrong password!":""),
